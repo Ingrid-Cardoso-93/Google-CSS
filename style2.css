@@ -1,0 +1,114 @@
+*{
+	box-sizing: border-box;
+	font-family: Arial;
+	font-size: 16px;
+	color: blue;
+	text-align: center;
+}
+.the-body{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	padding: 5px;
+}
+
+.space{
+	padding: 25px;
+}
+
+.grid-minmax{
+	/* can use display: grid-inline; too*/
+	display: grid;
+	/* here defines the number of columns.
+	In this case, we have two. 
+	the minmax adjust to the matter with the div.*/
+	grid-template-columns: repeat(3, 2fr);
+	grid-auto-rows: minmax(100px);
+	justify-content: space-around;
+	background-color: crimson;
+	padding: 5px;
+}
+.grid-minmax div{
+	border: 2px #176787 solid;
+	border-radius: 5px;
+	background-color: white;
+}
+
+.grid-lines{
+	/* can use display: grid-inline; too*/
+	display: grid;
+	/* here defines the number of columns.
+	In this case, we have two. 
+	the minmax adjust to the matter with the div.*/
+	grid-template-columns: repeat(3, 2fr);
+	grid-auto-rows: 100px;
+	justify-content: space-around;
+	background-color: crimson;
+	padding: 5px;
+}
+.grid-lines div{
+	border: 2px #176787 solid;
+	border-radius: 5px;
+	background-color: white;
+}
+.box1{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	/* the column start from 1 and end wth 4 columns */
+	grid-row-start: 1;
+	grid-row-end: 3;
+	/* the row start from 1 and end with 3 rows */
+}
+.box2{
+	/* the column start with one and don have an end.
+	but the rows start with 3 cuz the box1 and ends with
+	5 */
+	grid-column-start: 1;
+	grid-row-start: 3;
+	grid-row-end: 5;
+}
+
+.gutters{
+	/* can use display: grid-inline; too*/
+	display: grid;
+	grid-template-columns: repeat(3, 2fr);
+	/* the gap give spaces between them */
+	grid-column-gap: 10px;
+	grid-row-gap: 1em;
+	justify-content: space-around;
+	background-color: crimson;
+	padding: 5px;
+}
+.gutters div{
+	border: 2px #176787 solid;
+	border-radius: 5px;
+	background-color: white;
+}
+.grid-nested{
+	/* can use display: grid-inline; too*/
+	display: grid;
+	grid-template-columns: repeat(3, 2fr);
+	grid-auto-rows: 100px;
+	justify-content: space-around;
+	background-color: crimson;
+	padding: 5px;
+}
+.grid-nested div{
+	border: 2px #176787 solid;
+	border-radius: 5px;
+	background-color: white;
+	padding: 5px;
+}
+/* here there isn't relation with the father div */
+.boxes1{
+	display: grid;
+	grid-template-columns: repeat(3, 3fr);
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	/* then we can display the other div inside the boxes1
+	as his father */
+}

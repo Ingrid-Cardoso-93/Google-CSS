@@ -1,0 +1,67 @@
+<!--- We create a grid container by declaring display: grid or display: inline-grid on an element. As soon as we do this, all direct children of that element become grid items. --->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid Techinics</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+	<div class="the-body">
+	<h3>Track sizing and minmax</h3>
+	<div class="grid-minmax">
+		<div>One</div>
+  		<div>Two<p>I have some more content in.</p>
+  			<p>This makes me taller than 100 pixels.</p>
+  		</div>
+  		<div>Three</div>
+  		<div>Four</div>
+  		<div>Five</div>
+	</div>
+
+	<div class="space">
+	</div>
+
+	<h3>Positioning items against lines</h3>
+	<div class="grid-lines">
+  		<div class="box1">One</div>
+  		<div class="box2">Two</div>
+  		<div class="box3">Three</div>
+  		<div class="box4">Four</div>
+  		<div class="box5">Five</div>
+  		<div class="box6">Six</div>
+	</div>
+
+	<div class="space">
+	</div>
+
+	<h3>Gutters</h3>
+	<div class="gutters">
+  		<div>One</div>
+  		<div>Two</div>
+  		<div>Three</div>
+  		<div>Four</div>
+  		<div>Five</div>
+  		<div>Six</div>
+	</div>
+
+	<div class="space">
+	</div>
+
+	<h3>Nesting Grids</h3>
+	<div class="grid-nested">
+  		<div class="boxes1">
+  			<div class="nested">Nested A</div>
+  			<div class="nested">Nested B</div>
+  			<div class="nested">Nested C</div>
+  		</div>
+  		<div class="boxes2">Two</div>
+  		<div class="boxes3">Three</div>
+  		<div class="boxes4">Four</div>
+  		<div class="boxes5">Five</div>
+  		<div class="boxes6">Six</div>
+	</div>
+</div>
+</body>
+</html>
+

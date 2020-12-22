@@ -1,0 +1,81 @@
+*{
+	box-sizing: border-box;
+	font-family: Arial;
+	font-size: 16px;
+	color: blue;
+	text-align: center;
+}
+.the-body{
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	height: 100%;
+	background-color: black;
+	padding: 5px;
+}
+.grid-container{
+	display: grid; /* can use display: grid-inline; too*/
+	background-color: crimson;
+	padding: 5px;
+}
+.grid-container div{
+	border: 2px #176787 solid;
+	border-radius: 5px;
+	background-color: white;
+}
+.space{
+	padding: 25px;
+}
+
+.grid-track{
+	/* can use display: grid-inline; too*/
+	display: grid;
+	/* here defines the number of columns.
+	In this case, we have two. */
+	grid-template-columns: 200px 200px;
+	justify-content: space-around;
+	background-color: crimson;
+	padding: 5px;
+}
+.grid-track div{
+	border: 2px #176787 solid;
+	border-radius: 5px;
+	background-color: white;
+	/*margin is optional*/
+	width: 100%;
+}
+
+.grid-track-repeat{
+	/* can use display: grid-inline; too*/
+	display: grid;
+	/* here defines the number of columns.
+	In this case, we have two. */
+	grid-template-columns: repeat(2, 200px);
+	justify-content: space-around;
+	background-color: crimson;
+	padding: 5px;
+}
+.grid-track-repeat div{
+	border: 2px #176787 solid;
+	border-radius: 5px;
+	background-color: white;
+	width: 100%;
+}
+
+.grid-implicit{
+	/* can use display: grid-inline; too*/
+	display: grid;
+	/* here defines the number of columns.
+	In this case, we have two. */
+	grid-template-columns: repeat(2, 200px);
+	grid-auto-rows: 100px;
+	justify-content: space-around;
+	background-color: crimson;
+	padding: 5px;
+}
+.grid-implicit div{
+	border: 2px #176787 solid;
+	border-radius: 5px;
+	background-color: white;
+	width: 100%;
+}
